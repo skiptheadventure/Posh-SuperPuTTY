@@ -12,7 +12,7 @@ Posh-SuperPuTTY is a set of PowerShell commands for reading and manipulating the
     Username to connect with.
 
 #### Examples
-PS C:\> Connect-SPSession -ComputerName Foo -Username Bar
+PS C:\\> Connect-SPSession -ComputerName Foo -Username Bar
 
 ### Get-SPSessions
 #### Parameters
@@ -20,7 +20,7 @@ PS C:\> Connect-SPSession -ComputerName Foo -Username Bar
     Path to the SuperPuTTY sessions file. Defaults to $env:USERPROFILE\Documents\SuperPuTTY\Sessions.xml.
 
 #### Examples
-PS C:\> Get-SPSessions -Path C:\Foo\Bar\Sessions.xml
+PS C:\\> Get-SPSessions -Path C:\Foo\Bar\Sessions.xml
 
 ### New-SPSession
 #### Parameters
@@ -33,4 +33,4 @@ PS C:\> Get-SPSessions -Path C:\Foo\Bar\Sessions.xml
 SessionName,SessionId,ImageKey,Host,Port,Proto,PuttySession,Username,ExtraArgs,SPSLFileName,RemotePath,LocalPath
 
 #### Examples
-PS C:\> New-SPSession -XMLPath C:\Foo\Bar\Sessions.xml -CSVPath C:\Bar\Foo\Sessions_to_Import.csv
+PS C:\\> New-SPSession -XMLPath C:\Foo\Bar\Sessions.xml -CSVPath C:\Bar\Foo\Sessions_to_Import.csv
