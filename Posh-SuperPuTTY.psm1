@@ -1,4 +1,4 @@
-function Import-SPSessions {
+function Get-SPSessions {
 	Param(
 		$Path
 	)
@@ -83,14 +83,6 @@ Function New-SPSession {
 	
 	return $SessionXML
 }
-
-function Get-SPSessions {
-	if (!($global:SPSessions)){
-		Import-SPSessions | Out-Null
-	}
-	$global:SPSessions
-}
-
 function Connect-SPSession {
 	Param (
 		$ComputerName,
@@ -98,7 +90,7 @@ function Connect-SPSession {
 	)
 	
 	if (!($global:SPSessions)){
-		Import-SPSessions | Out-Null
+		Get-SPSessions | Out-Null
 	}
 	
 	$Session = $global:SPSessions | Where-Object {$_.name -eq $ComputerName}

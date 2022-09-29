@@ -69,7 +69,7 @@ Description = 'A collection of PowerShell cmdlets to interact with SuperPuTTY.'
 # NestedModules = @()
 
 # Functions to export from this module, for best performance, do not use wildcards and do not delete the entry, use an empty array if there are no functions to export.
-FunctionsToExport = @("Connect-SPSession","Get-SPSessions","Import-SPSessions","New-SPSession")
+FunctionsToExport = @("Connect-SPSession","Get-SPSessions","New-SPSession")
 
 # Cmdlets to export from this module, for best performance, do not use wildcards and do not delete the entry, use an empty array if there are no cmdlets to export.
 CmdletsToExport = @()
